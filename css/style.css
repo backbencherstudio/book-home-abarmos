@@ -1,0 +1,248 @@
+/* .slick-slide {
+    width: 300px !important;
+} */
+
+/* Basic styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 8px 12px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.intro h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.intro p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.intro .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    gap: 5px;
+}
+
+.video-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.data-results {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.data-results p strong {
+    font-size: 18px;
+}
+
+.book-preview {
+    text-align: center;
+}
+
+.book-preview h2 {
+    margin: 15px 0;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.slider .slide {
+    text-align: center;
+    width: 80px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pricing h2 {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.pricing p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.testimonials-content p {
+    font-size: 12px;
+    margin: 8px 0;
+    font-style: italic;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+} */
+
+.body-custom {
+    font-family: "FONTSPRING DEMO - Konnect Bold", "FONTSPRING DEMO - Konnect Bold Placeholder", sans-serif;
+}
+
+/* Fade In Animation */
+.animate-fadeIn {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+.animate-fadeInDelay {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+/* Slide In Animation */
+.animate-slideIn {
+    animation: slideIn 1s ease-in-out forwards;
+}
+.animate-slideInDelay {
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+/* Zoom In Animation */
+.animate-zoomIn {
+    animation: zoomIn 1s ease-in-out forwards;
+}
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDelay {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Apply Animations */
+.animate-fadeIn { animation: fadeIn 1s ease-out forwards; }
+.animate-fadeInDelay { animation: fadeInDelay 1.5s ease-out forwards; }
+.animate-slideIn { animation: slideIn 1s ease-out forwards; }
+.animate-zoomIn { animation: zoomIn 1s ease-out forwards; }
+
+/* Step Box Styling */
+.step-box {
+    background-color: #A020F0;
+    padding: 1rem;
+    border-radius: 9999px;
+    text-align: center;
+    color: white;
+    width: 120px;
+}
+.step-number {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.step-text {
+    font-size: 0.875rem;
+}
+
+/* Data Point Styling */
+.data-point {
+    text-align: center;
+}
+.count-up {
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    margin-bottom: 16px;
+}
+
+#testimonial-slider .slick-slide {
+    height: 160px; /* Set a fixed height for each slide */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#testimonial-slider blockquote {
+    min-height: 120px; /* Minimum height for the text area */
+    overflow: hidden; /* Ensure text doesn’t exceed the block */
+}
+
+#testimonial-slider .slick-slide .flex {
+    margin-top: auto;
+}

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap N Read - Homepage</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body class="text-gray-800 body-custom antialiased">
+    <div class="">
+        <!-- Header Section -->
+        <header class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <!-- Logo without text -->
+                <img src="./img/snap-read-img-2.png" alt="Logo" class="w-20">
+
+                <!-- Desktop Buttons -->
+                <div class="hidden md:flex space-x-4">
+                    <button class="px-5 py-3 text-white font-semibold rounded-full transition duration-300 transform hover:scale-105" style="background-color: #A020F0;">
+                        Create First 3 Books FREE
+                    </button>
+                    <a href="#">
+                        <button class="px-5 py-3 text-gray-800 font-semibold rounded-full transition duration-300 transform hover:scale-105 hover:bg-gray-200" style="background-color: #f9f9f9;">
+                            Sign Up
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden mr-1">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg class="w-8 h-8 text-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 18L20 18" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 12L20 12" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 6L20 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Overlay -->
+            <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden transition-opacity duration-300"></div>
+        
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-20">
+                <div class="flex flex-col p-4 space-y-4">
+                    <button class="w-full px-4 py-2 text-white rounded-md font-semibold hover:bg-blue-700" style="background-color: #A020F0;">
+                        Create first 3 books FREE
+                    </button>
+                    <a href="">
+                        <button class="w-full px-4 py-2 rounded-md font-semibold hover:bg-gray-300" style="background-color: #f9f9f9;">
+                            Sign Up
+                        </button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </header>
+
+        <!-- Intro Section with Modern Design -->
+        <section class="bg-cover bg-center relative py-20" style="background-image: url('./img/intro-bg.avif');">
+            <!-- Overlay for darkening -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+
+            <div class="container mx-auto text-center md:text-left relative z-10">
+                <div class="md:grid md:grid-cols-2 items-center gap-8 px-6 md:px-0">
+                    <!-- Text Content with Subtle Animation -->
+                    <div class="space-y-4 text-white">
+                        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fadeIn">Snap N Read</h1>
+                        <p class="text-xl md:text-2xl italic font-medium mb-2 animate-fadeInDelay">
+                            Photo-based stories for <span class="underline font-semibold">early readers</span>, by <span class="underline font-semibold">early readers</span>.
+                        </p>
+                        <p class="text-lg md:text-xl font-semibold mb-6 animate-fadeIn">Create story books in seconds.</p>
+
+                        <!-- Steps with Animation and Hover Effects -->
+                        <div class="flex flex-row items-center justify-left gap-4 animate-slideIn">
+                            <div class="step-box">
+                                <div class="step-number">Step 1</div>
+                                <div class="text-[14px] md:text-sm">Select your photos</div>
+                            </div>
+                            <div class="step-box">
+                                <div class="step-number">Step 2</div>
+                                <div class="text-[14px] md:text-sm">Write the story</div>
+                            </div>
+                            <div class="step-box">
+                                <div class="step-number">Step 3</div>
+                                <div class="text-[14px] md:text-sm">Read the book</div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="inline-block mt-6 px-10 py-4 bg-green-500 text-white font-semibold rounded-full transition duration-300 transform hover:scale-105">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Video Embed with Shadow Effect -->
+                    <div class="flex justify-center my-10 mx-auto w-full animate-zoomIn">
+                        <div class="relative w-full max-w-full" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl" src="https://www.youtube.com/embed/yz0S6g9RoTc?si=yDVrlECkE18cFFxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Results Section -->
+        <div class="container mx-auto text-center my-12">
+            <h2 class="text-4xl font-extrabold italic text-gray-800 animate-slideIn">Data backed results</h2>
+        </div>
+        <section class="relative bg-cover bg-center text-white py-20" style="background-image: url('./img/childrens-with-tablet.jpg'); min-height: 30rem;">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+
+            <div class="container mx-auto text-center relative z-10 flex flex-col gap-12">
+                <!-- Data Points with Count-Up Animation -->
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 mx-4">
+                    <div class="data-point animate-fadeInDelay">
+                        <strong class="count-up text-6xl md:text-8xl" data-target="173">0%</strong>
+                        <p class="text-2xl font-medium">More likely to read a book created by themselves</p>
+                    </div>
+                    <div class="data-point animate-fadeInDelay">
+                        <strong class="count-up text-6xl md:text-8xl" data-target="242">0%</strong>
+                        <p class="text-2xl font-medium">More likely to read a book with their pictures</p>
+                    </div>
+                </div>
+                <!-- Explanation Text -->
+                <p class="text-lg md:text-3xl font-bold drop-shadow-2xl max-w-3xl md:mx-auto animate-fadeIn mx-4">Our studies show that children (aged 4-7) are more likely to engage in reading a book either created by themselves or about themselves.</p>
+                <div class="grid justify-center">
+                    <a href="#" class="inline-block mt-6 px-10 py-4 bg-green-500 text-white font-semibold rounded-full transition duration-300 transform hover:scale-105">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy and Safety Section Redesigned -->
+        <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16 relative overflow-hidden">
+            <div class="container mx-auto text-center px-6 relative z-10">
+                <!-- Title with Gradient Text Animation -->
+                <h2 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700 mb-4 animate-fadeIn">
+                    Parents' Safety & Privacy Concerns
+                </h2>
+                <h3 class="text-xl md:text-2xl font-semibold text-gray-700 mb-4 animate-slideIn">
+                    Your Pictures are Safe & Secure
+                </h3>
+
+                <!-- Animated Text Blocks -->
+                <p class="text-gray-800 text-lg md:text-xl font-medium mb-6 animate-fadeInDelay">
+                    <span class="font-bold text-blue-600">We are COPPA & GDPR Compliant.</span>
+                </p>
+                <p class="text-gray-600 text-md md:text-lg mb-10 animate-fadeIn">
+                    Photos are encrypted at rest and in transit. Faces are blurred before sharing with AI services.
+                </p>
+                
+                <!-- Icons for Certifications with Animation and Gradient Backgrounds -->
+                <div class="flex justify-center gap-10 mb-12 animate-zoomIn">
+                    <!-- COPPA Badge -->
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-tl from-indigo-200 to-blue-300 shadow-lg transform hover:scale-105 duration-300 flex items-center justify-center">
+                        <img src="./img/coppa.png" alt="COPPA Compliant" class="w-3/4 h-3/4">
+                    </div>
+                    <!-- GDPR Badge -->
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-tl from-indigo-200 to-blue-300 shadow-lg transform hover:scale-105 duration-300 flex items-center justify-center">
+                        <img src="./img/gdpr.png" alt="GDPR Compliant" class="w-3/4 h-3/4">
+                    </div>
+                </div>
+
+                <!-- Privacy Policy Link with Enhanced Animation -->
+                <a href="/privacy-policy" class="text-white bg-gradient-to-r from-blue-500 to-indigo-600 font-semibold text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105 hover:bg-opacity-90">
+                    See Our Privacy Policy
+                </a>
+            </div>
+
+            <!-- Background Animation (subtle circular shapes for visual interest) -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="bg-blue-400 opacity-20 w-80 h-80 rounded-full absolute -top-16 -left-16 animate-bounceSlow"></div>
+                <div class="bg-indigo-400 opacity-20 w-96 h-96 rounded-full absolute bottom-0 -right-24 animate-bounceSlow"></div>
+            </div>
+        </section>
+
+
+        <!-- Book Preview Slider -->
+        <div class="container mx-auto mb-16 overflow-hidden">
+            <div class="text-center my-10 text-3xl font-bold tracking-tight sm:text-4xl">What a book looks like</div>
+            <div id="book-slider" class="slick-slider w-full">
+                <!-- Book slides with hover effects -->
+                <div class="text-center">
+                    <img src="./img/book-2.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 1" style="height: 400px;">
+                    <p class="text-gray-700">Story Name 1</p>
+                </div>
+                <div class="text-center">
+                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 2" style="height: 400px;">
+                    <p class="text-gray-700">Story Name 2</p>
+                </div>
+                <div class="text-center">
+                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 3" style="height: 400px;">
+                    <p class="text-gray-700">Story Name 3</p>
+                </div>
+                <div class="text-center">
+                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px;">
+                    <p class="text-gray-700">Story Name 4</p>
+                </div>
+                <div class="text-center">
+                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 5" style="height: 400px;">
+                    <p class="text-gray-700">Story Name 5</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <section class="">
+            <div class="pt-5 bg-gray-900" id="pricing">
+                <div class="mx-auto pb-20 mt-4 max-w-7xl px-6 lg:px-8">
+                  <div class="mx-auto max-w-4xl text-center">
+                    <h1 class="text-base font-semibold leading-7 text-indigo-400">Pricing</h1>
+                    <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Price Tires</p>
+                  </div>
+                  <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">Choose the product that works best</p>
+                  <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <!-- First Product -->
+                    <div class=" ring-white/10 rounded-3xl p-8 xl:p-10">
+                      <div class="flex items-center justify-between gap-x-4">
+                        <h2 id="product1" class="text-lg font-semibold leading-8 text-white">Reading & Sharing: <div class="font-medium">Free</div></h2>
+                      </div>
+                      <p class="mt-4 text-sm leading-6 text-gray-300">Creating Digital Books:</p>
+                      <p class="mt-6 flex items-baseline gap-x-1">
+                        <span class="text-4xl font-bold tracking-tight text-white">€ 4 / monthly</span><span class="text-sm font-semibold leading-6 text-gray-300"></span>
+                      </p>
+                      <a href="#" aria-describedby="product1"
+                        class="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order
+                        Now</a>
+                      <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>40 units</li>
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>1 feature</li>
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>Fast delivery</li>
+                      </ul>
+                    </div>
+              
+                    <!-- Second Product -->
+                    <div class="bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
+                      <div class="flex items-baseline justify-between gap-x-4">
+                        <h2 id="product2" class="text-lg font-semibold leading-8 text-white">Reading & Sharing: <div class="font-medium">Free</div></h2>
+                        <p class="rounded-full bg-indigo-500 px-2.5 py-1 text-xs font-semibold leading-5 text-white">Most popular</p>
+                      </div>
+                      <p class="mt-4 text-sm leading-6 text-gray-300">Creating Digital Book:</p>
+                      <p class="mt-6 flex items-baseline gap-x-1">
+                        <span class="text-4xl font-bold tracking-tight text-white">€ 10 / monthly</span><span class="text-sm font-semibold leading-6 text-gray-300"></span>
+                      </p>
+                      <a href="#" aria-describedby="product2"
+                        class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order
+                        Now</a>
+                      <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>120 units</li>
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>3 different features</li>
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>Fast delivery</li>
+                      </ul>
+                    </div>
+              
+                    <!-- Third Product -->
+                    <div class=" ring-white/10 rounded-3xl p-8 xl:p-10">
+                      <div class="flex items-center justify-between gap-x-4">
+                        <h2 id="product3" class="text-lg font-semibold leading-8 text-white">Reading & Sharing: <div class="font-medium">Free</div></h2>
+                      </div>
+                      <p class="mt-4 text-sm leading-6 text-gray-300">Creating digital books:</p>
+                      <p class="mt-6 flex items-baseline gap-x-1">
+                        <span class="text-4xl font-bold tracking-tight text-white">€ 20 / monthly</span><span class="text-sm font-semibold leading-6 text-gray-300"></span>
+                      </p>
+                      <a href="#" aria-describedby="product3"
+                        class="bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order
+                        Now</a>
+                      <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>240 units</li>
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>6 different features</li>
+                        <li class="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true" class="h-6 w-5 flex-none text-white">
+                            <path fill-rule="evenodd"
+                              d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                              clip-rule="evenodd"></path>
+                          </svg>Fast delivery</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- Print on Demand Section -->
+        <section class="relative bg-gray-50 py-16">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('./img/child-reading.jpg');">
+                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay for readability -->
+            </div>
+
+            <div class="container mx-auto relative z-10 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Print on Demand</h2>
+                <p class="text-lg md:text-xl text-white mt-2 italic">(coming soon)</p>
+                
+                <div class="mt-8 text-2xl md:text-3xl font-semibold tracking-tight text-white mx-8 md:mx-16">
+                    She loved a story and wants it in print? We’ve got you covered! A few clicks and you'll have it in your hands in just 7 days, for only
+                </div>
+                <p class="text-3xl md:text-4xl font-bold text-green-300 mt-4">$3/page</p>
+                <p class="text-lg md:text-xl text-white">(plus shipping)</p>
+
+                <!-- CTA Button -->
+                <a href="#print-details" class="inline-block mt-8 px-10 py-4 bg-yellow-500 text-white font-semibold text-lg rounded-md hover:bg-yellow-600 transition duration-300">
+                    Learn More
+                </a>
+            </div>
+        </section>
+        <!-- Customer Testimonials Section -->
+        <div class="py-12" style="background-color: #314774;">
+            <div class="container mx-auto overflow-hidden text-white">
+                <h2 class="text-center text-xl font-bold tracking-tight text-white sm:text-3xl mb-6">What Our Customers Say</h2>
+                
+                <!-- Testimonials Slider -->
+                <div id="testimonial-slider" class="slick-slider w-full">
+                    <!-- Testimonial Slide -->
+                    <div class="text-center px-4">
+                        <blockquote class="text-gray-300 italic max-w-xs mx-auto mb-4">
+                            "Jimm's engagement in reading
+                            realty spiked with this app. He
+                            now insists on reading only
+                            books that he creates himself.
+                            Thank for helping us unlock
+                            his potential!"
+                        </blockquote>
+                        <div class="flex items-center justify-center text-sm font-semibold">
+                            <img src="./img/parent-1.jpg" alt="Profile 1" class="w-8 h-8 rounded-full mr-2">
+                            <span>Jenifer. parent of a 5 yo</span>
+                        </div>
+                    </div>
+                    <div class="text-center px-4">
+                        <blockquote class="text-gray-300 italic max-w-xs mx-auto mb-4">
+                            "I create a book my 6 yo every
+                            day before go to sleep. I use his
+                            anticipation to read it in morning
+                            as another negotiation technique
+                            when putting him to sleep :)"
+                        </blockquote>
+                        <div class="flex items-center justify-center text-sm font-semibold">
+                            <img src="./img/parent-2.jpg" alt="Profile 1" class="w-8 h-8 rounded-full mr-2">
+                            <span>Eric. parent ofa 6 yo</span>
+                        </div>
+                    </div>
+                    <div class="text-center px-4">
+                        <blockquote class="text-gray-300 italic max-w-xs mx-auto mb-4">
+                            "What a neat trick to help her overcome
+                            her anxiety of learning to read! She's
+                            now creating books herself and
+                            proudly demonstrates her reading
+                            skills to classmates. Thank you!"
+                        </blockquote>
+                        <div class="flex items-center justify-center text-sm font-semibold">
+                            <img src="./img/parent-3.jpg" alt="Profile 1" class="w-8 h-8 rounded-full mr-2">
+                            <span>Emily. parent of a 5 yo</span>
+                        </div>
+                    </div>
+                    <div class="text-center px-4">
+                        <blockquote class="text-gray-300 italic max-w-xs mx-auto mb-4">
+                            "IVe been taking pictures of her
+                            whereever we go... but now they
+                            serve a purpose! How neat :)"
+                        </blockquote>
+                        <div class="flex items-center justify-center text-sm font-semibold">
+                            <img src="./img/parent-4.jpg" alt="Profile 1" class="w-8 h-8 rounded-full mr-2">
+                            <span>Susan. parent of a 6 yo</span>
+                        </div>
+                    </div>
+                    <div class="text-center px-4">
+                        <blockquote class="text-gray-300 italic max-w-xs mx-auto mb-4">
+                            "Our 7 yo is again excited to go out
+                            with us, no matter where we go
+                            (hiking. restaurant, libary). as she
+                            uses it as an opportunity to create a
+                            new book. We love it!"
+                        </blockquote>
+                        <div class="flex items-center justify-center text-sm font-semibold">
+                            <img src="./img/parent-4.jpg" alt="Profile 1" class="w-8 h-8 rounded-full mr-2">
+                            <span>Andy. parent of a 7 yo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <ul class="slick-dots flex justify-center space-x-2"></ul>
+                </div>
+
+                <div class="flex justify-center pb-8">
+                    <button class="mt-6 px-6 py-4 bg-blue-600 text-white rounded-md font-semibold text-lg hover:bg-blue-700">
+                        Create Your First 3 Books FREE
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $('#book-slider').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    dots: true,
+                    arrows: true,
+                    pauseOnHover: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 4
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+        
+                $('#testimonial-slider').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000,
+                    dots: true,
+                    arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const counters = document.querySelectorAll(".count-up");
+            let hasAnimated = false; // To track if the counters have been animated
+
+            function animateCountUp(counter) {
+                const target = +counter.getAttribute("data-target");
+                const duration = 5000;
+                const increment = target / (duration / 50);
+
+                let count = 0;
+
+                function updateCounter() {
+                    count += increment;
+
+                    if (count < target) {
+                        counter.textContent = `${Math.floor(count)}%`;
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = `${target}%`;
+                    }
+                }
+
+                updateCounter();
+            }
+
+            function handleScroll() {
+                const introSection = document.querySelector('header'); // Select Section 1
+                const section1Position = introSection.getBoundingClientRect().bottom; // Get bottom position of Section 1
+
+                // Check if Section 1 has scrolled out of view
+                if (section1Position < 0 && !hasAnimated) {
+                    hasAnimated = true; // Set the flag to true to avoid multiple animations
+
+                    counters.forEach(counter => {
+                        animateCountUp(counter);
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+            handleScroll(); // Check immediately in case the section is already in view
+        });
+
+    </script>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-0');
+            mobileMenu.classList.toggle('translate-x-full');
+            overlay.classList.toggle('hidden');
+            overlay.classList.toggle('opacity-100');
+        }
+        menuBtn.addEventListener('click', toggleMenu);
+
+        overlay.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>
