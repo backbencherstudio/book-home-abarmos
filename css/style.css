@@ -3,6 +3,11 @@
     font-family: "FONTSPRING DEMO - Konnect Bold", "FONTSPRING DEMO - Konnect Bold Placeholder", sans-serif;
 }
 
+.nav-color {
+    --tw-gradient-from: #ede1ff;
+    --tw-gradient-stops: var(--tw-gradient-from), #d6bcff;
+}
+
 /* Fade In Animation */
 .animate-fadeIn {
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -60,20 +65,79 @@
 .animate-zoomIn { animation: zoomIn 1s ease-out forwards; }
 
 /* Step Box Styling */
+.step-circle {
+    display: flex;
+    justify-content: start;
+}
+
 .step-box {
     background-color: #A020F0;
-    padding: 1rem;
-    border-radius: 9999px;
+    padding: 12px;
+    border-radius: 50%; /* Makes it circular */
     text-align: center;
     color: white;
-    width: 120px;
+    width: 120px; /* Width and height the same to form a perfect circle */
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+    position: relative;
+    overflow: hidden; /* Ensures text stays inside the circle */
 }
+
+.step-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .step-number {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Make the step number a little bigger */
     font-weight: bold;
 }
+
 .step-text {
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* Smaller text for better fit */
+}
+
+@media (max-width: 768px) {
+    .step-circle {
+        justify-content: center;
+    }
+
+    .step-box {
+        width: 100px; /* Smaller circles on mobile */
+        height: 100px;
+        padding: 16px; /* Adjust padding for smaller circles */
+    }
+
+    .step-number {
+        font-size: 1rem; /* Reduce the font size of the number on smaller screens */
+    }
+
+    .text {
+        font-size: 0.75rem; /* Reduce text size to prevent overflow */
+    }
+}
+
+@media (max-width: 480px) {
+    .step-circle {
+        justify-content: center;
+    }
+
+    .step-box {
+        width: 90px; /* Even smaller on extra small devices */
+        height: 90px;
+    }
+
+    .step-number {
+        font-size: 0.9rem; /* Further reduce the font size */
+    }
+
+    .text {
+        font-size: 0.7rem; /* Further reduce the text size */
+    }
 }
 
 /* Data Point Styling */

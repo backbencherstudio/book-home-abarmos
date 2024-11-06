@@ -53,20 +53,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Observe each section
     sections.forEach(section => observer.observe(section));
 });
-
-// Mobile menu toggle
-document.addEventListener("DOMContentLoaded", function () {
-    const menuBtn = document.getElementById("menu-btn");
-    const overlay = document.getElementById("overlay");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    menuBtn.addEventListener("click", function () {
-        overlay.classList.toggle("hidden");
-        mobileMenu.classList.toggle("translate-x-full");
-    });
-
-    overlay.addEventListener("click", function () {
-        overlay.classList.add("hidden");
-        mobileMenu.classList.add("translate-x-full");
-    });
-});
