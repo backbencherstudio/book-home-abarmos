@@ -48,10 +48,10 @@
                     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden transition-opacity duration-300"></div>
                 
                     <!-- Mobile Dropdown Menu -->
-                    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-20 overflow-hidden">
+                    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-20 overflow-hidden bg-gradient-to-r nav-color to-purple-900 shadow-md">
                         <div class="flex flex-col p-4 space-y-4">
                             <!-- Close Button -->
-                            <button id="close-btn" class="absolute top-2 text-3xl text-black focus:outline-none border rounded-full px-2 bg-gray-200">
+                            <button id="close-btn" class="absolute top-2 text-3xl text-black focus:outline-none border rounded-full px-2 bg-gray-100">
                                 &times;
                             </button>
                     
@@ -195,105 +195,122 @@
             <div id="book-slider" class="slick-slider w-full">
                 <!-- Book slides with hover effects -->
                 <div class="text-center">
-                    <img src="./img/books/halloween-1.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 1" style="height: 400px; width: 65%;">
+                    <img src="./img/books/halloween-1.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 1" style="height: 400px;">
                     <p class="text-gray-700 mx-16">Large orange arch has ghosts peeking. The boy walks to the fun maze.</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 2" style="height: 400px; width: 65%;">
+                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 2" style="height: 400px;">
                     <p class="text-gray-700 mx-16">Story Name 2</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 3" style="height: 400px; width: 65%;">
+                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 3" style="height: 400px;">
                     <p class="text-gray-700 mx-16">Story Name 3</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px; width: 65%;">
+                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px;">
                     <p class="text-gray-700 mx-16">Story Name 4</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/books/jump-2.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px; width: 65%;">
+                    <img src="./img/books/jump-2.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px;">
                     <p class="text-gray-700 mx-16">Victor jumps high on his bed. He looks happy to be here.</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/book.jpg" class="bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 5" style="height: 400px; width: 65%;">
+                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 5" style="height: 400px;">
                     <p class="text-gray-700 mx-16">Story Name 5</p>
                 </div>
             </div>
         </div>
 
         <!-- Pricing Section -->
-<section class="">
-    <div class="pt-5 bg-gray-900" id="pricing">
-        <div class="mx-auto pb-20 mt-4 max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-4xl text-center">
-                <h1 class="text-base font-semibold leading-7 text-indigo-400">Pricing</h1>
-                <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Price Tiers</p>
-            </div>
-            <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">Choose the product that works best</p>
-            <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                <!-- Free Tier -->
-                <div class="bg-white/10 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
-                    <div class="flex items-center justify-between gap-x-4">
-                        <h2 id="product1" class="text-lg font-semibold leading-8 text-white">Free</h2>
+        <section class="">
+            <div class="pt-5 bg-gray-900" id="pricing">
+                <div class="mx-auto pb-20 mt-4 max-w-7xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-4xl text-center">
+                        <h1 class="text-base font-semibold leading-7 text-indigo-400">Pricing</h1>
+                        <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Price Tiers</p>
                     </div>
-                    <p class="mt-4 text-sm leading-6 text-gray-300">Read & Share Books: Unlimited</p>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="text-4xl font-bold tracking-tight text-white">€ 0 / monthly</span>
-                    </p>
-                    <a href="#" aria-describedby="product1"
-                        class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order Now</a>
-                    <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
-                        <li>Unlimited Book Reading</li>
-                        <li>Unlimited Book Sharing</li>
-                        <li>Create up to 3 books (with premium options)</li>
-                    </ul>
-                </div>
+                    <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">Choose the product that works best</p>
+                    <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                        <!-- Free Tier -->
+                        <div class="bg-white/10 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
+                            <div class="flex items-center justify-between gap-x-4">
+                                <h2 id="product1" class="text-lg font-semibold leading-8 text-white">Free</h2>
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-gray-300">Get FREE credits after you sign up</p>
+                            <p class="mt-12 flex items-baseline gap-x-1">
+                                <span class="text-4xl font-bold tracking-tight text-white">Free</span>
+                            </p>
+                            
+                            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10 list-disc">
+                                <li>Unlimited Book Reading</li>
+                                <li>Unlimited Book Sharing</li>
+                                <li>Create up to 3 books (with premium options)</li>
+                            </ul>
+                            <div class="md:pt-24">
+                                <a href="#" aria-describedby="product1" class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order Now</a>
+                            </div>
+                        </div>
 
-                <!-- Starter Tier -->
-                <div class="bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
-                    <div class="flex items-baseline justify-between gap-x-4">
-                        <h2 id="product2" class="text-lg font-semibold leading-8 text-white">Starter</h2>
-                        <p class="rounded-full bg-indigo-500 px-2.5 py-1 text-xs font-semibold leading-5 text-white">Most Popular</p>
-                    </div>
-                    <p class="mt-4 text-sm leading-6 text-gray-300">Includes all Free Tier features</p>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="line-through text-sm text-gray-300">$8</span>
-                        <span class="text-4xl font-bold tracking-tight text-white">€ 4 / monthly</span>
-                    </p>
-                    <a href="#" aria-describedby="product2"
-                        class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order Now</a>
-                    <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
-                        <li>Create up to 20 books/month</li>
-                        <li>Book length: 1-5 pages</li>
-                        <li>A1: Light Design</li>
-                    </ul>
-                </div>
+                        <!-- Starter Tier -->
+                        <div class="bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
+                            <div class="flex items-baseline justify-between gap-x-4">
+                                <h2 id="product2" class="text-lg font-semibold leading-8 text-white">Starter</h2>
+                                <p class="rounded-full bg-indigo-500 px-2.5 py-1 text-xs font-semibold leading-5 text-white">Most Popular</p>
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-gray-300">Get monthly credits for a low monthly fee</p>
+                            <p class="mt-12 flex items-baseline gap-x-1">
+                                <span class="line-through text-sm text-gray-300">$8</span>
+                                <span class="text-4xl font-bold tracking-tight text-white">€ 4 / monthly</span>
+                            </p>
+                            
+                            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10 list-disc">
+                                <li>Create up to 20 books/month</li>
+                                <li>Book length: 1-5 pages</li>
+                                <li>A1: Light Design</li>
+                            </ul>
+                            <div class="md:pt-24">
+                                <a href="#" aria-describedby="product1" class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order Now</a>
+                            </div>
+                        </div>
 
-                <!-- Premium Tier -->
-                <div class="bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
-                    <div class="flex items-baseline justify-between gap-x-4">
-                        <h2 id="product3" class="text-lg font-semibold leading-8 text-white">Premium</h2>
+                        <!-- Premium Tier -->
+                        <div class="bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
+                            <div class="flex items-baseline justify-between gap-x-4">
+                                <h2 id="product3" class="text-lg font-semibold leading-8 text-white">Premium</h2>
+                            </div>
+                            <p class="mt-4 text-sm leading-6 text-gray-300">Create longer books, give characters a name and use more detailed AI</p>
+                            <p class="mt-6 flex items-baseline gap-x-1">
+                                <span class="line-through text-sm text-gray-300">$12</span>
+                                <span class="text-4xl font-bold tracking-tight text-white">€ 8 / monthly</span>
+                            </p>
+                            
+                            <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10 list-disc">
+                                <li>Create up to 60 books/month</li>
+                                <li>Book length: 1-15 pages</li>
+                                <li>A1: Detailed Design</li>
+                                <li>Character Tagging</li>
+                                <li>Book Editing</li>
+                            </ul>
+                            <div class="md:pt-6">
+                                <a href="#" aria-describedby="product1" class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order Now</a>
+                            </div>
+                        </div>
                     </div>
-                    <p class="mt-4 text-sm leading-6 text-gray-300">Includes all Starter Tier features</p>
-                    <p class="mt-6 flex items-baseline gap-x-1">
-                        <span class="line-through text-sm text-gray-300">$12</span>
-                        <span class="text-4xl font-bold tracking-tight text-white">€ 8 / monthly</span>
-                    </p>
-                    <a href="#" aria-describedby="product3"
-                        class="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Order Now</a>
-                    <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
-                        <li>Create up to 60 books/month</li>
-                        <li>Book length: 1-15 pages</li>
-                        <li>A1: Detailed Design</li>
-                        <li>Character Tagging</li>
-                        <li>Book Editing</li>
-                    </ul>
-                    <p class="mt-6 text-xs text-gray-300">First 200 subscribers get 3 months of Premium FREE with promo code <Strong>EARLY BIRD</Strong>. 43 subscriptions left!</p>
+                    <div>
+                        <p class="mt-12 text-4xl font-bold tracking-tight text-white sm:text-5xl text-center">“Pay as you Go”</p>
+                        <p class="mx-auto mt-6 max-w-2xl text-center text-xl md:text-2xl font-medium leading-8 text-white">
+                            Running out of book creation credits? We have you covered!
+                        </p>
+                        <div class="grid justify-center mt-5">
+                            <ul class="list-disc text-white grid grid-cols-2 gap-4 text-medium md:text-xl">
+                                <li>$0.50 Starter book</li>
+                                <li>$1.00 Premium book</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
         <!-- Print on Demand Section -->
@@ -403,7 +420,46 @@
                 </div>
             </div>
         </div>
-        </div>
+        <!-- Customer Testimonials Section End -->
+        <!-- FAQ Section Start -->
+        <section class="py-24 bg-gray-900">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-manrope text-center font-bold leading-[3.25rem] text-white">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+              <div class="accordion-group">
+                
+                <!-- Accordion Item 1 -->
+                <div class="accordion  rounded-xl transition duration-500 mb-8 ">
+                  <button class="accordion-toggle group flex items-center justify-between w-full text-lg font-normal leading-8 text-white transition duration-500 hover:text-indigo-500">
+                    <h5 class="text-sm md:text-xl group-hover:text-indigo-500">Do my purchased credits expire?</h5>
+                    <span class="icon group-hover:text-indigo-500 text-2xl font-bold">+</span>
+                  </button>
+                  <div class="accordion-content">
+                    <p class="text-base text-white font-normal leading-6">
+                        When “Pay as you Go” credits are purchased, they stay with your account for up to 2 years.
+                    </p>
+                  </div>
+                </div>
+        
+                <!-- Accordion Item 2 -->
+                <div class="accordion rounded-xl transition duration-500 mb-8 ">
+                  <button class="accordion-toggle group flex items-center justify-between w-full text-lg font-normal leading-8 text-white transition duration-500 hover:text-indigo-500">
+                    <h5 class="text-sm md:text-xl group-hover:text-indigo-500">Do my credits roll over from month to month?</h5>
+                    <span class="icon group-hover:text-indigo-500 text-2xl font-bold">+</span>
+                  </button>
+                  <div class="accordion-content">
+                    <p class="text-base text-white font-normal leading-6">
+                        The discount you receive for the monthly credits is with the expectation that those credits will be used up in that month. As such, unused credits do not roll over to the next month.
+                    </p>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

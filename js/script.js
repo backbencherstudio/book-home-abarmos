@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#book-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         dots: true,
         arrows: true,
@@ -102,3 +102,39 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 handleScroll(); // Check immediately in case the section is already in view
 });
+
+document.querySelectorAll('.accordion').forEach((accordion) => {
+    const toggle = accordion.querySelector('.accordion-toggle');
+    const content = accordion.querySelector('.accordion-content');
+    const icon = accordion.querySelector('.icon');
+  
+    toggle.addEventListener('click', () => {
+      const isExpanded = content.classList.contains('expanded');
+  
+      // Close all other accordions
+      document.querySelectorAll('.accordion-content').forEach((c) => {
+        c.style.maxHeight = null;
+        c.classList.remove('expanded');
+      });
+      document.querySelectorAll('.icon').forEach((i) => {
+        i.textContent = '+';
+      });
+      document.querySelectorAll('.accordion-toggle').forEach((t) => {
+        t.classList.remove('text-indigo-500'); // Reset text color
+      });
+  
+      // Expand/Collapse current accordion
+      if (!isExpanded) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.classList.add('expanded');
+        icon.textContent = '-';
+        toggle.classList.add('text-indigo-500'); // Apply text color to expanded item
+      } else {
+        content.style.maxHeight = null;
+        content.classList.remove('expanded');
+        icon.textContent = '+';
+        toggle.classList.remove('text-indigo-500'); // Remove text color when collapsing
+      }
+    });
+});
+  
