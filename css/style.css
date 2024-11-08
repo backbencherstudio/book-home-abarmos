@@ -142,14 +142,16 @@
 
 /* Book Slider */
 #book-slider .book-img {
-    width: 70%;
-    object-fit: cover;
+    width: 90%;
+    /* object-fit: cover; */
 }
+
+
 
 @media (max-width: 480px) {
     #book-slider .book-img {
         width: 70%;
-        object-fit: cover;
+        /* object-fit: cover; */
     }
 }
 
@@ -192,4 +194,10 @@
 .accordion-content.expanded {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.footer-style {
+    max-width: 80rem;
+    margin: auto;
+    padding: 1rem 0 1rem 0;
 }

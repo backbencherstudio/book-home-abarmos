@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snap N Read - Homepage</title>
-    <link rel="icon" type="image" href="./img/favicon.png" />
+    <link rel="icon" type="image" href="./img/icon.png" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Slick Slider CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
@@ -19,10 +17,8 @@
         <header class="fixed md:relative top-0 left-0 w-full z-30 bg-gradient-to-r nav-color to-purple-900 shadow-md">
             <div class="container mx-auto">
                 <div class="flex justify-between items-center mx-4 md:mx-0">
-                    <!-- Logo without text -->
                     <img src="./img/logo-2.png" alt="Logo" class="w-40 my-4 animate-zoomIn">
     
-                    <!-- Desktop Buttons -->
                     <div class="hidden md:flex space-x-4 animate-zoomIn">
                         <button class="px-5 py-3 text-white font-semibold rounded-full transition duration-300 transform hover:scale-105" style="background-color: #A020F0;">
                             Create First 3 Books FREE
@@ -34,7 +30,6 @@
                         </a>
                     </div>
     
-                    <!-- Mobile Menu Button -->
                     <div class="md:hidden mr-1">
                         <button id="menu-btn" class="focus:outline-none">
                             <svg class="w-8 h-8 text-black" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,13 +39,11 @@
                             </svg>
                         </button>
                     </div>
-                    <!-- Mobile Overlay -->
                     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden transition-opacity duration-300"></div>
                 
                     <!-- Mobile Dropdown Menu -->
                     <div id="mobile-menu" class="fixed inset-y-0 right-0 w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-20 overflow-hidden bg-gradient-to-r nav-color to-purple-900 shadow-md">
                         <div class="flex flex-col p-4 space-y-4">
-                            <!-- Close Button -->
                             <button id="close-btn" class="absolute top-2 text-3xl text-black focus:outline-none border rounded-full px-2 bg-gray-100">
                                 &times;
                             </button>
@@ -71,12 +64,10 @@
 
         <!-- Intro Section with Modern Design -->
         <section class="bg-cover bg-center relative py-20" style="background-image: url('./img/intro-bg.avif');">
-            <!-- Overlay for darkening -->
             <div class="absolute inset-0 bg-black opacity-60"></div>
 
             <div class="container mx-auto mt-16 md:mt-0 text-center md:text-left relative z-10">
                 <div class="md:grid md:grid-cols-2 items-center gap-8 px-6 md:px-0">
-                    <!-- Text Content with Subtle Animation -->
                     <div class="space-y-4 text-white">
                         <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fadeIn">Snap N Read</h1>
                         <p class="text-xl md:text-2xl italic font-medium mb-2 animate-fadeInDelay">
@@ -84,7 +75,6 @@
                         </p>
                         <p class="text-lg md:text-xl font-semibold mb-6 animate-fadeIn">Create story books in seconds.</p>
 
-                        <!-- Steps with Animation and Hover Effects -->
                         <div class="step-circle items-center gap-4 animate-slideIn">
                             <div class="step-box">
                                 <div class="step-number">Step 1</div>
@@ -109,7 +99,7 @@
 
                     <!-- Video Embed with Shadow Effect -->
                     <div class="flex justify-center my-10 mx-auto w-full animate-zoomIn">
-                        <div class="relative w-full max-w-full" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+                        <div class="relative w-full max-w-full" style="padding-top: 56.25%;">
                             <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl" src="https://www.youtube.com/embed/yz0S6g9RoTc?si=yDVrlECkE18cFFxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -121,7 +111,6 @@
         <section class="relative bg-cover bg-center text-white py-32" style="background-image: url('./img/childrens-with-tablet.jpg'); min-height: 45rem;" data-animate="true">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="container mx-auto text-center relative z-10 flex flex-col gap-12">
-                <!-- Header positioned on top of background -->
                 <div class="text-center mb-12 md:my-12">
                     <h2 class="text-3xl md:text-5xl font-extrabold italic text-white animate-fadeInDelay hidden">Data backed results</h2>
                 </div>
@@ -174,13 +163,11 @@
                     </div>
                 </div>
                 
-                <!-- Privacy Policy Link with Enhanced Animation -->
                 <a href="/privacy-policy" class="text-white bg-gradient-to-r from-blue-500 to-indigo-600 font-semibold text-lg px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 hover:bg-opacity-90 animate-fadeIn hidden">
                     See Our Privacy Policy
                 </a>
             </div>
 
-            <!-- Background Animation (subtle circular shapes for visual interest) -->
             <div class="absolute inset-0 overflow-hidden">
                 <div class="bg-blue-400 opacity-20 w-80 h-80 rounded-full absolute -top-16 -left-16 animate-bounceSlow"></div>
                 <div class="bg-indigo-400 opacity-20 w-96 h-96 rounded-full absolute bottom-0 -right-24 animate-bounceSlow"></div>
@@ -193,30 +180,33 @@
         <div class="container mx-auto mb-16 overflow-hidden">
             <div class="text-center my-10 text-3xl font-bold tracking-tight sm:text-4xl">What a book looks like</div>
             <div id="book-slider" class="slick-slider w-full">
-                <!-- Book slides with hover effects -->
                 <div class="text-center">
                     <img src="./img/books/halloween-1.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 1" style="height: 400px;">
-                    <p class="text-gray-700 mx-16">Large orange arch has ghosts peeking. The boy walks to the fun maze.</p>
+                    <p class="text-gray-700 mx-10">Large orange arch has ghosts peeking. The boy walks to the fun maze.</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 2" style="height: 400px;">
-                    <p class="text-gray-700 mx-16">Story Name 2</p>
+                    <img src="./img/books/pigeon-3.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 3" style="height: 400px;">
+                    <p class="text-gray-700 mx-10">Pigeon looks at the dominos with glee. Frog sits back with a silly grin.</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 3" style="height: 400px;">
-                    <p class="text-gray-700 mx-16">Story Name 3</p>
-                </div>
-                <div class="text-center">
-                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px;">
-                    <p class="text-gray-700 mx-16">Story Name 4</p>
+                    <img src="./img/books/children-swim.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px;">
+                    <p class="text-gray-700 mx-10">Dima stands bravely on the yellow mat.</p>
                 </div>
                 <div class="text-center">
                     <img src="./img/books/jump-2.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 4" style="height: 400px;">
-                    <p class="text-gray-700 mx-16">Victor jumps high on his bed. He looks happy to be here.</p>
+                    <p class="text-gray-700 mx-10">Victor jumps high on his bed. He looks happy to be here.</p>
                 </div>
                 <div class="text-center">
-                    <img src="./img/book.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 5" style="height: 400px;">
-                    <p class="text-gray-700 mx-16">Story Name 5</p>
+                    <img src="./img/books/pigeon-4.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 5" style="height: 400px;">
+                    <p class="text-gray-700 mx-10">The frog spots the blue pigeon. They meet on the shiny floor.</p>
+                </div>
+                <div class="text-center">
+                    <img src="./img/books/victor-play.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 5" style="height: 400px;">
+                    <p class="text-gray-700 mx-10">Victor stands by the leaves, grinning from cheek to cheek. The wind is crisp and the leaves are warm and dry. People are in the park, watching all the fun here.</p>
+                </div>
+                <div class="text-center">
+                    <img src="./img/books/victor-face.jpg" class="book-img bg-gray-200 rounded-lg mb-4 mx-auto shadow-lg transform transition-transform duration-300 hover:scale-105" alt="Story Name 5" style="height: 400px;">
+                    <p class="text-gray-700 mx-10">A lady paints Victor's face. Victor sits very still. He wears a gray coat. The paint brush is small. The lady wears pink. Grass is green around them. The sky looks cloudy. Victor's eyes are calm.</p>
                 </div>
             </div>
         </div>
@@ -329,7 +319,6 @@
                 <p class="text-3xl md:text-4xl font-bold text-green-300 mt-4">$3/page</p>
                 <p class="text-lg md:text-xl text-white">(plus shipping)</p>
 
-                <!-- CTA Button -->
                 <a href="#print-details" class="inline-block mt-8 px-10 py-4 bg-yellow-500 text-white font-semibold text-lg rounded-md hover:bg-yellow-600 transition duration-300 transform hover:scale-105" style="background-color: #A020F0;">
                     Learn More
                 </a>
@@ -340,9 +329,7 @@
             <div class="container mx-auto overflow-hidden text-white">
                 <h2 class="text-center text-xl font-bold tracking-tight text-white sm:text-3xl mb-8">What Our Customers Say</h2>
                 
-                <!-- Testimonials Slider -->
                 <div id="testimonial-slider" class="slick-slider w-full">
-                    <!-- Testimonial Slide -->
                     <div class="text-center px-4">
                         <blockquote class="text-gray-300 italic max-w-xs mx-auto mb-4">
                             "Jimm's engagement in reading
@@ -413,7 +400,7 @@
                     <ul class="slick-dots flex justify-center space-x-2"></ul>
                 </div>
 
-                <div class="flex justify-center pb-8">
+                <div class="flex justify-center">
                     <button class="px-5 py-3 mt-8 text-white font-semibold rounded-full transition duration-300 transform hover:scale-105" style="background-color: #A020F0;">
                         Create First 3 Books FREE
                     </button>
@@ -431,7 +418,6 @@
               </div>
               <div class="accordion-group">
                 
-                <!-- Accordion Item 1 -->
                 <div class="accordion  rounded-xl transition duration-500 mb-8 ">
                   <button class="accordion-toggle group flex items-center justify-between w-full text-lg font-normal leading-8 text-white transition duration-500 hover:text-indigo-500">
                     <h5 class="text-sm md:text-xl group-hover:text-indigo-500">Do my purchased credits expire?</h5>
@@ -444,7 +430,6 @@
                   </div>
                 </div>
         
-                <!-- Accordion Item 2 -->
                 <div class="accordion rounded-xl transition duration-500 mb-8 ">
                   <button class="accordion-toggle group flex items-center justify-between w-full text-lg font-normal leading-8 text-white transition duration-500 hover:text-indigo-500">
                     <h5 class="text-sm md:text-xl group-hover:text-indigo-500">Do my credits roll over from month to month?</h5>
@@ -459,7 +444,26 @@
         
               </div>
             </div>
-          </section>
+        </section>
+        <!-- Footer section -->
+        <footer class="bg-gray-900 border-t border-gray-700">
+            <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between ">
+                    <div class='grid items-center ml-1 text-xs md:text-base text-white'>© 2024 AI gineer.io All Rights Reserved.</div>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-white rounded-full p-3 shadow-inner shadow-gray-500/80 transition duration-300 transform hover:scale-105">
+                            <img src="./img/social/facebook.png" class="w-5" alt="">
+                        </a>
+                        <a href="#" class="bg-white rounded-full p-3 shadow-inner shadow-gray-500/80 transition duration-300 transform hover:scale-105">
+                            <img src="./img/social/instagram.png" class="w-5" alt="">
+                        </a>
+                        <a href="#" class="bg-white rounded-full p-3 shadow-inner shadow-gray-500/80 transition duration-300 transform hover:scale-105">
+                            <img src="./img/social/twitter.png" class="w-5" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
