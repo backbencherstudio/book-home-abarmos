@@ -141,16 +141,28 @@
 }
 
 /* Book Slider */
-#book-slider .book-img {
-    width: 90%;
+/* #book-slider .book-img { */
+    /* width: 90%; */
     /* object-fit: cover; */
+/* } */
+
+@media (max-width: 1024px) {
+    #book-slider .book-img {
+        width: 90%;
+        /* object-fit: cover; */
+    }
 }
 
-
+@media (max-width: 768px) {
+    #book-slider .book-img {
+        width: 90%;
+        /* object-fit: cover; */
+    }
+}
 
 @media (max-width: 480px) {
     #book-slider .book-img {
-        width: 70%;
+        width: 80%;
         /* object-fit: cover; */
     }
 }
