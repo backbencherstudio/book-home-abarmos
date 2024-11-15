@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#book-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
         dots: true,
         arrows: true,
